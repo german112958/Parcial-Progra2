@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 3</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>tabla de compra</h1>
+    <h3>inserte sus compras</h3>
+    <form>
+        <label for="producto">Producto</label>
+        <input type="text" id="Producto" name="Producto">
+        <br>
+        <label for="precio">Precio</label>
+        <input type="text" id="Precio" name="Precio">
+        <br>
+        <label for="cantidad">Cantidad</label>
+        <input type="text" id="Cantidad" name="Cantidad">
+        <br>
+        <button id="send" onclick="sendValue()">Calcular</button>
+        <script src="/static/script.js"></script>
+    </form>
+    <h2>seleccione presupuesto</h2>
+    <br>
+    <select name="presupuesto">
+        <option value="primera opcion">50</option>
+        <option value="segunda opcion">100</option>
+        <option value="tercera opcion">250</option>
+        <option value="cuarta opcion">500</option>
+    </select>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="tablaprecio">
+        </tbody>
+    </table>
+</body>
+
+</html>
